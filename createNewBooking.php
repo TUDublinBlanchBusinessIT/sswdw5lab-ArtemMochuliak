@@ -19,5 +19,10 @@ if (mysqli_query($conn, $sql)) {
 }
 */
 
+// The INSERT will fail if memberID 13 or courtID 15 are not present in the database,
+// because foreign key rules require these IDs to already exist in the member and court tables
+
+
+
 mysqli_close($conn); 
 ?>
